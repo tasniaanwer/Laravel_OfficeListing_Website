@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ninja Network</title>
+  <title>Internship Office Portal</title>
 
   @vite('resources/css/app.css')
 </head>
@@ -16,12 +16,12 @@
 
   <header>
     <nav>
-      <h1>Ninja Network</h1>
-      <a href="{{ route('ninjas.index') }}"> 
-        All Ninjas
+      <h1>Internship Office Portal</h1>
+      <a href="{{ route('internships.index') }}">
+        All Internships
       </a>
-      <a href="{{ route('ninjas.create') }}">
-        Create New Ninja
+      <a href="{{ route('internships.create') }}">
+        Post New Internship
       </a>
     </nav>
   </header>
