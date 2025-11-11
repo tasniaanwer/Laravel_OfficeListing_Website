@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "public/index.php",
+      "use": "vercel-php"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/public/index.php"
+    }
+  ],
+  "buildCommand": "chmod +x vercel-build.sh && ./vercel-build.sh",
+  "env": {
+    "APP_ENV": "production",
+    "APP_DEBUG": "false",
+    "APP_URL": "https://internship-office-portal.vercel.app",
+    "APP_CONFIG_CACHE": "/tmp/config.php",
+    "APP_SERVICES_CACHE": "/tmp/services.php",
+    "APP_PACKAGES_CACHE": "/tmp/packages.php",
+    "APP_CACHE_FILES": "/tmp/storage",
+    "VIEW_COMPILED_PATH": "/tmp/storage/framework/views",
+    "LOG_CHANNEL": "stderr",
+    "DB_CONNECTION": "sqlite",
+    "DB_DATABASE": "/tmp/database.sqlite"
+  }
+}
